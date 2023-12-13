@@ -1,13 +1,12 @@
 
 import Link from "next/link";
 import { ModeToggle } from "../mode-toogle";
-import { Edit, Plus } from "lucide-react";
-import { DashboardIcon } from "@radix-ui/react-icons";
+import { LayoutDashboard, Plus,  } from "lucide-react";
 
 export const navigation: { href: string, name: string, icon: JSX.Element }[] = [
     // { name: 'Home', href: '/' },
     { name: 'Add', href: '/products/add', icon: <Plus /> },
-    { name: 'List', href: '/products/list', icon: <DashboardIcon /> },
+    { name: 'List', href: '/products/list', icon: <LayoutDashboard /> },
     // { name: 'Edit', href: '/products/edit', icon: <Edit /> },
 ];
 

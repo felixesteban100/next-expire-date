@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { SelectValue, Select, SelectTrigger, SelectContent, SelectItem } from "@/components/ui/select"
-import { DoubleArrowLeftIcon, DoubleArrowRightIcon } from "@radix-ui/react-icons"
-import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react"
+import { ChevronLeftIcon, ChevronRightIcon, ChevronsLeft, ChevronsRight } from "lucide-react"
 
 export default function DataTablePaginationLoading() {
     return (
@@ -39,7 +38,7 @@ export default function DataTablePaginationLoading() {
                         disabled={true}
                     >
                         <span className="sr-only">Go to first page</span>
-                        <DoubleArrowLeftIcon className="h-4 w-4" />
+                        <ChevronsLeft className="h-4 w-4" />
                     </Button>
                     <Button
                         variant="outline"
@@ -63,7 +62,7 @@ export default function DataTablePaginationLoading() {
                         disabled={true}
                     >
                         <span className="sr-only">Go to last page</span>
-                        <DoubleArrowRightIcon className="h-4 w-4" />
+                        <ChevronsRight className="h-4 w-4" />
                     </Button>
                 </div>
             </div>

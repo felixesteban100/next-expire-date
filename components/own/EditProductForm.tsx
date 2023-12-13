@@ -8,7 +8,6 @@ import { Button } from "@/components/ui/button"
 import { toast } from "../ui/use-toast"
 import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover"
 import { cn } from "@/lib/utils"
-import { CalendarIcon, CaretSortIcon, CheckIcon } from "@radix-ui/react-icons"
 import { format } from "date-fns"
 import { Calendar } from "../ui/calendar"
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem } from "../ui/command"
@@ -16,7 +15,7 @@ import { updateProduct } from "@/lib/data"
 import { places } from "./table/data/data"
 import { Product } from "@/lib/types"
 import * as z from "zod"
-
+import { ArrowUpDown, CalendarIcon, CheckIcon } from "lucide-react"
 
 type EditProductFormProps = {
     product: Product
@@ -170,7 +169,7 @@ export default function EditProductForm({ product }: EditProductFormProps) {
                                                     (place) => place.value === field.value
                                                 )?.label
                                                 : "Select place"}
-                                            <CaretSortIcon className="ml-2 h-4 w-4 shrink-0 opacity-50" />
+                                            <ArrowUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
                                         </Button>
                                     </FormControl>
                                 </PopoverTrigger>

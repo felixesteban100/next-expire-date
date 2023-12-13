@@ -2,8 +2,7 @@
 
 import { useFormState, useFormStatus } from 'react-dom';
 import { Button } from '@/components/ui/button';
-import { ArrowRightIcon, AtSignIcon, Key } from 'lucide-react';
-import { ExclamationTriangleIcon } from '@radix-ui/react-icons';
+import { AlertTriangle, ArrowRightIcon, AtSignIcon, Key } from 'lucide-react';
 import { authenticate } from '@/lib/data';
 
 export default function LoginForm() {
@@ -59,7 +58,7 @@ export default function LoginForm() {
       <div className="flex h-8 items-end space-x-1">
         {message && (
           <>
-            <ExclamationTriangleIcon className="h-5 w-5 text-destructive" />
+            <AlertTriangle className="h-5 w-5 text-destructive" />
             <p aria-live="polite" className="text-sm text-destructive">
               {message}
             </p>

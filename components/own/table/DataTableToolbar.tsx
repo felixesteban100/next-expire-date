@@ -1,12 +1,12 @@
 "use client"
 
-import { Cross2Icon } from "@radix-ui/react-icons"
 import { Table } from "@tanstack/react-table"
 import { Input } from "../../ui/input"
 import { Button } from "../../ui/button"
 import { DataTableFacetedFilter } from "./DataTableFacetedFilter"
 import { DataTableViewOptions } from "./DataTableViewOptions"
 import { places } from "./data/data"
+import { X } from "lucide-react"
 
 interface DataTableToolbarProps<TData> {
   table: Table<TData>
@@ -60,7 +60,7 @@ export function DataTableToolbar<TData>({
             className="h-8 px-2 lg:px-3"
           >
             Reset
-            <Cross2Icon className="ml-2 h-4 w-4" />
+            <X className="ml-2 h-4 w-4" />
           </Button>
         )}
       </div>

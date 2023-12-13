@@ -1,10 +1,10 @@
 "use client"
 
 import { DropdownMenuTrigger } from "@radix-ui/react-dropdown-menu"
-import { MixerHorizontalIcon } from "@radix-ui/react-icons"
 import { Table } from "@tanstack/react-table"
 import { DropdownMenu, DropdownMenuCheckboxItem, DropdownMenuContent, DropdownMenuLabel, DropdownMenuSeparator } from "../../ui/dropdown-menu"
 import { Button } from "../../ui/button"
+import { Eye } from "lucide-react"
 
 interface DataTableViewOptionsProps<TData> {
   table: Table<TData>
@@ -21,7 +21,8 @@ export function DataTableViewOptions<TData>({
           size="sm"
           className="ml-auto h-8 flex"
         >
-          <MixerHorizontalIcon className="mr-2 h-4 w-4" />
+          <Eye className="mr-2 h-4 w-4" />
+          {/* <MixerHorizontalIcon className="mr-2 h-4 w-4" /> */}
           View
         </Button>
       </DropdownMenuTrigger>

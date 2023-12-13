@@ -1,6 +1,5 @@
 "use client"
 
-import { DotsHorizontalIcon } from "@radix-ui/react-icons"
 // import { Row } from "@tanstack/react-table"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { Button } from "@/components/ui/button"
@@ -9,6 +8,7 @@ import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, 
 import { deleteProduct } from "@/lib/data"
 import { Product } from "@/lib/types"
 import Link from "next/link"
+import { MoreHorizontal } from "lucide-react"
 // import { productSchema } from "./AddProductForm"
 
 interface DataTableRowActionsProps<TData> {
@@ -68,7 +68,7 @@ export function DataTableRowActions<TData>({
           variant="ghost"
           className="flex h-8 w-8 p-0 data-[state=open]:bg-muted"
         >
-          <DotsHorizontalIcon className="h-4 w-4" />
+          <MoreHorizontal className="h-4 w-4" />
           <span className="sr-only">Open menu</span>
         </Button>
       </DropdownMenuTrigger>
